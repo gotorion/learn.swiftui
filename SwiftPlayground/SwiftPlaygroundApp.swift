@@ -1,14 +1,7 @@
-//
-//  SwiftPlaygroundApp.swift
-//  SwiftPlayground
-//
-//  Created by lijunhui on 2025/7/7.
-//
-
 import SwiftUI
 import SwiftData
 
-@main
+@main // entry point for the app
 struct SwiftPlaygroundApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -27,6 +20,5 @@ struct SwiftPlaygroundApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
     }
 }
